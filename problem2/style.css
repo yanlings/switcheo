@@ -1,0 +1,121 @@
+/* Reset some default browser styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Define overall page styles */
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #d5eafc;
+}
+
+/* Card container styles */
+.card {
+  background-color: #fff;
+  /* border: 1px solid #e0e0e0; */
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  max-width: 600px; 
+  padding: 20px;
+  text-align: center;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2)
+}
+
+/* Header styles */
+.card h1 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+/* Form label styles */
+.card label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 8px;
+  font-size: 16px;
+}
+
+/* Form input and select styles */
+.card input[type="number"],
+.card select,
+.card input[readonly] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  font-size: 16px;
+  
+}
+
+/* Button styles */
+.card button {
+  background-color: #0056b3;
+  background: linear-gradient(#00d2ff, #3a7bd5);
+  color: #fff;
+  border: none;
+  border-radius: 4px;
+  padding: 10px 20px;
+  cursor: pointer;
+  font-size: 18px;
+  transition: background-color 0.3s ease;
+}
+
+.card button:hover {
+  background-color: #0056b3;
+}
+
+/* Add a black background color to the top navigation */
+.topnav {
+  background-color: #d5eafc;
+  overflow: hidden;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  
+}
+
+/* Style the links inside the navigation bar */
+.topnav a {
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 17px;
+}
+
+/* Change the color of links on hover */
+.topnav a:hover {
+  background-color: #0056b3;
+  color: #d5eafc;
+}
+
+/* Add a color to the active/current link */
+.topnav a.active {
+  background-color: #0056b3;
+  color: #d5eafc;
+}
+
+/* Custom dropdown styling */
+.custom-dropdown {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  appearance: none;
+  background: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z' fill='none'/></svg>") no-repeat right center;
+}
+
+/* Style the icons */
+.custom-dropdown option:before {
+  content: url('icons/car.svg'); /* Get the icon path from the data-icon attribute */
+  margin-right: 8px; /* Add space between icon and text */
+}
+
