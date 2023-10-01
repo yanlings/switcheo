@@ -1,0 +1,13 @@
+List out the computational inefficiencies and anti-patterns found in the code block below.
+1. There are unused variables in the code. Such as "formattedBalances". This can create unncessary computation and complexity
+2. console.err does not exist
+3. The code maps 'sortedBalances' twice, this can cause iteration of the same array multiple times, leading to computational inefficiencies.
+4. An interface was created with nothing inside. (Interface Props)
+5. useWalletBalances() was used but not defined
+
+Solution to fix the inefficiencies:
+1. Added the missing property blockchain to the WalletBalance interface.
+2. Used console.error for error logging.
+3. Simplified the filtering logic for sortedBalances.
+4. Fixed the variable name lhsPriority to balancePriority.
+5. Create some sample functions such as useWalletBalances or BoxProps as these functions were used but not declared
