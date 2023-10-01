@@ -1,0 +1,121 @@
+<!-- <!DOCTYPE html>
+<html>
+
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Currency Converter</title>
+    <!-- You may add more stuff here -->
+    
+    <link href="style.css" rel="stylesheet" />
+  </head>
+ 
+  <body>
+    <div class="topnav">
+      <a class="active" href="#Home">Swap</a>
+      <a href="#news">Tokens</a>
+      <a href="#contact">NFTs</a>
+      <a href="#about">Pools</a>
+    </div>
+
+    <div class="card">
+    <!-- You may reorganize the whole HTML, as long as your form achieves the same effect. -->
+    <form class="login-form">
+
+      <h1>Tokens Converter</h1>
+      <div>
+        <label for="input-amount">Amount to send</label>
+        <input id="input-amount" type="number" placeholder="Enter amount" />
+      </div>
+
+      <div>
+        <label for="input-currency">Select Token</label>
+        <select id="input-currency">
+          <option value="BLUR" data-icon="BLUR.svg">BLUR</option>
+          <option value="bNEO">bNEO</option>
+          <option value="BUSD">BUSD</option>
+          <option value="USD">USD</option>
+          <option value="ETH">ETH</option>
+          <option value="GMX">GMX</option>
+          <option value="STEVMOS">STEVMOS</option>
+          <option value="LUNA">LUNA</option>
+          <option value="RATOM">RATOM</option>
+          <option value="STRD">STRD</option>
+          <option value="EVMOS">EVMOS</option>
+          <option value="IBCX">IBCX</option>
+          <option value="IRIS">IRIS</option>
+          <option value="ampLUNA">ampLUNA</option>
+          <option value="KUJI">KUJI</option>
+          <option value="STOSMO">STOSMO</option>
+          <option value="USDC">USDC</option>
+          <option value="axlUSDC">axlUSDC</option>
+          <option value="ATOM">ATOM</option>
+          <option value="STATOM">STATOM</option>
+          <option value="OSMO">OSMO</option>
+          <option value="rSWTH">rSWTH</option>
+          <option value="STLUNA">STLUNA</option>
+          <option value="LSI">LSI</option>
+          <option value="OKB">OKB</option>
+          <option value="OKT">OKT</option>
+          <option value="SWTH">SWTH</option>
+          <option value="USC">USC</option>
+          <option value="WBTC">WBTC</option>
+          <option value="wstETH">wstETH</option>
+          <option value="YieldUSD">YieldUSD</option>
+          <option value="ZIL">ZIL</option>
+        </select>
+      </div>
+
+      <div>
+        <label for="output-amount">Amount to receive</label>
+        <input id="output-amount" readonly />
+      </div>
+
+      <div>
+        <label for="output-currency">Select Token</label>
+        <select id="output-currency">
+          <option value="BLUR">BLUR</option>
+          <option value="bNEO">bNEO</option>
+          <option value="BUSD">BUSD</option>
+          <option value="USD">USD</option>
+          <option value="ETH">ETH</option>
+          <option value="GMX">GMX</option>
+          <option value="STEVMOS">STEVMOS</option>
+          <option value="LUNA">LUNA</option>
+          <option value="RATOM">RATOM</option>
+          <option value="STRD">STRD</option>
+          <option value="EVMOS">EVMOS</option>
+          <option value="IBCX">IBCX</option>
+          <option value="IRIS">IRIS</option>
+          <option value="ampLUNA">ampLUNA</option>
+          <option value="KUJI">KUJI</option>
+          <option value="STOSMO">STOSMO</option>
+          <option value="USDC">USDC</option>
+          <option value="axlUSDC">axlUSDC</option>
+          <option value="ATOM">ATOM</option>
+          <option value="STATOM">STATOM</option>
+          <option value="OSMO">OSMO</option>
+          <option value="rSWTH">rSWTH</option>
+          <option value="STLUNA">STLUNA</option>
+          <option value="LSI">LSI</option>
+          <option value="OKB">OKB</option>
+          <option value="OKT">OKT</option>
+          <option value="SWTH">SWTH</option>
+          <option value="USC">USC</option>
+          <option value="WBTC">WBTC</option>
+          <option value="wstETH">wstETH</option>
+          <option value="YieldUSD">YieldUSD</option>
+          <option value="ZIL">ZIL</option>
+        </select>
+      </div>
+    </form>
+    
+
+    <div>
+      <button type="button" onclick="calculateConversion()" class="button">CONFIRM
+        SWAP</button>
+    </div>
+  </div>
+    <script src="script.js"></script>
+  </body>
+
+</html>
